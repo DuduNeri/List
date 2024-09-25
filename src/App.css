@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+}
+
+body {
+  background-image: url(assets/bg.webp);
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  font-weight: 1000;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 75vh;
+  backface-visibility: hidden;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(0.5px);
+  border: 0.2px solid rgba(255, 255, 255, 0.2);
+}
+.heading {
+  color: #61dafb;
+  margin-top: 10px;
+  padding: 0;
+  font-size: 36px; 
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  animation: blinking 5s infinite ease-in-out;
+}
+
+@keyframes blinking {
+  0% {
+    color: #61dafb; 
+  }
+  40% {
+    color: #21a1f1; 
+  }
+  80% {
+    color: #005386; 
+  }
+  100% {
+    color: #61dafb; 
+  }
+}
+
+
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+ 
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 25px;
+}
+
+.add-button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #21a1f1;
+  box-shadow: 0 0 50px rgba(33, 161, 241, 0.6);
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  min-height: 500px;
+  max-height: 400px;
+  overflow-y: auto; 
+  
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.delete-button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background-color: #d07fff;
+  color: #282c34;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #ff0000;
+  box-shadow: 0 0 50px rgba(255, 0, 0, 0.6);
+}
